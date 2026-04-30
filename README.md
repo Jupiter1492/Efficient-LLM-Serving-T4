@@ -18,7 +18,7 @@ The goal is to measure real-world performance differences in:
 
 * Throughput (tokens per second)
 * Latency (response time)
-* GPU memory behavior
+* Approximate GPU memory usage
 
 without modifying the model itself.
 
@@ -49,6 +49,8 @@ Google Colab environment using an NVIDIA Tesla T4 GPU
 | HuggingFace | 4.91 sec | 162.86 tokens/sec |
 | vLLM        | 1.88 sec | 425.28 tokens/sec |
 
+Results are based on a single-run benchmark on a Tesla T4 GPU and may vary depending on hardware and batch size.
+
 ### Key Result
 
 vLLM achieved approximately **2.6× higher throughput** and significantly lower latency compared to standard HuggingFace inference.
@@ -63,7 +65,7 @@ vLLM introduces **PagedAttention**, which:
 
 * Breaks KV cache into fixed-size memory blocks
 * Uses a mapping system similar to virtual memory
-* Eliminates fragmentation
+* Significantly reduces memory fragmentation
 * Enables larger batch sizes and higher throughput
 
 ---
