@@ -1,0 +1,17 @@
+
+EXPERIMENTAL RESULTS SUMMARY
+Model: TinyLlama-1.1B-Chat-v1.0
+Hardware: Tesla T4
+
+HUGGINGFACE RESULTS:
+Latency: 4.91s
+Throughput: 162.86 tokens/sec
+Peak VRAM: 2.08 GB
+
+VLLM RESULTS:
+Latency: 1.88s
+Throughput: 425.28 tokens/sec
+Approx Peak VRAM: 5.92 GB (Pool)
+
+IMPROVEMENT:
+Throughput Increase: 2.61x
