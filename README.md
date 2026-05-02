@@ -7,6 +7,7 @@ University of Central Florida
 ## Author
 
 Nicholas Lisle
+Nicholas Lisle conducted all aspects of this project, including implementation, experimentation, analysis, and report writing.
 
 ---
 
